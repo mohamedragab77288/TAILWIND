@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduLearn - Online Learning Platform</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <base target="_blank">
+</head>
+
+<body class="bg-white text-slate-600 font-['Poppins']">
+
+    <!-- Header and navigation -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+            <!-- Website logo -->
+            <a href="#home"
+               class="text-2xl font-bold text-violet-600 hover:scale-105 transition duration-300">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Edu<span class="text-fuchsia-500">Learn</span>
+            </a>
+
+            <!-- Hidden checkbox for the mobile menu -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <!-- Mobile menu button -->
+            <label for="menu-toggle"
+                   class="md:hidden text-2xl text-violet-600 cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Desktop navigation links -->
+            <ul class="hidden md:flex items-center gap-8 font-medium">
+                <li>
+                    <a href="#home" class="hover:text-violet-600 transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#courses" class="hover:text-violet-600 transition duration-300">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#team" class="hover:text-violet-600 transition duration-300">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:text-violet-600 transition duration-300">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Desktop join button -->
+            <a href="#contact"
+               class="hidden md:inline-block bg-violet-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-violet-700 hover:-translate-y-1 transition duration-300">
+                Join Now
+            </a>
+
+            <!-- Mobile navigation menu -->
+            <div class="hidden peer-checked:block md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
+                <ul class="flex flex-col gap-1 px-6 py-4 font-medium">
+
+                    <li>
+                        <a href="#home"
+                           class="block py-2 hover:text-violet-600 transition duration-300">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#courses"
+                           class="block py-2 hover:text-violet-600 transition duration-300">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#team"
+                           class="block py-2 hover:text-violet-600 transition duration-300">
+                            Team
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           class="block py-2 hover:text-violet-600 transition duration-300">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="pt-2">
+                        <a href="#contact"
+                           class="inline-block bg-violet-600 text-white px-6 py-2.5 rounded-full hover:bg-violet-700 transition duration-300">
+                            Join Now
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home"
+             class="relative pt-32 pb-20 bg-gradient-to-br from-violet-50 via-white to-fuchsia-50 overflow-hidden">
+
+        <!-- Decorative background shapes -->
+        <div class="absolute -top-20 -right-20 w-72 h-72 bg-violet-200/30 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-fuchsia-200/30 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Hero text content -->
+            <div>
+
+                <!-- Small hero badge -->
+                <span class="inline-flex items-center gap-2 bg-white text-violet-600 px-4 py-2 rounded-full text-sm font-medium shadow-sm mb-6">
+                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full animate-ping"></span>
+                    Online Learning Platform
+                </span>
+
+                <!-- Main heading -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                    We Create
+                    <span class="text-violet-600">Learning Success</span>
+                    for Your Future
+                </h1>
+
+                <!-- Hero description -->
+                <p class="text-lg leading-relaxed mb-8 max-w-xl">
+                    We provide integrated learning solutions that help you develop your skills
+                    and achieve your goals through innovative educational programs.
+                </p>
+
+                <!-- Hero buttons -->
+                <div class="flex flex-wrap gap-4 mb-10">
+
+                    <a href="#courses"
+                       class="bg-violet-600 text-white px-8 py-3.5 rounded-full font-medium hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-200 hover:-translate-y-1 transition duration-300">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+
+                    <a href="#courses"
+                       class="bg-white text-violet-600 px-8 py-3.5 rounded-full font-medium border border-violet-200 hover:border-violet-600 hover:-translate-y-1 transition duration-300">
+                        Our Courses
+                    </a>
+
+                </div>
+
+                <!-- Quick statistics -->
+                <div class="grid grid-cols-3 gap-4 text-center md:text-left">
+
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">10+</p>
+                        <p class="text-sm">Years Experience</p>
+                    </div>
+
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">+500</p>
+                        <p class="text-sm">Students</p>
+                    </div>
+
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">Pro</p>
+                        <p class="text-sm">Professional Team</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hero image -->
+            <div class="hidden md:block">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                     alt="Students learning online"
+                     class="rounded-3xl shadow-2xl shadow-violet-200 w-full hover:scale-105 transition duration-500">
+            </div>
+
+        </div>
+
+        <!-- Floating happy students card -->
+        <div class="hidden md:flex absolute bottom-16 right-24 lg:right-40 bg-white rounded-2xl shadow-xl shadow-violet-100 px-5 py-4 items-center gap-3 hover:-translate-y-2 transition duration-300">
+
+            <div class="w-12 h-12 bg-violet-100 rounded-full flex items-center justify-center text-violet-600 text-xl">
+                <i class="fa-solid fa-face-smile"></i>
+            </div>
+
+            <div>
+                <p class="font-bold text-slate-900">Happy Students</p>
+                <p class="text-sm">+500 worldwide</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Courses section -->
+    <section id="courses" class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Courses section heading -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+
+                <span class="inline-block bg-violet-50 text-violet-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Our Courses
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    Our Integrated Programs
+                </h2>
+
+                <p>
+                    We offer a comprehensive range of educational solutions to grow your skills.
+                </p>
+
+            </div>
+
+            <!-- Courses cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Online courses card -->
+                <div class="bg-violet-50/50 border border-violet-100 rounded-3xl p-8 hover:bg-white hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <div class="w-16 h-16 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-violet-600 group-hover:text-white group-hover:rotate-6 transition duration-500">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        Online Courses
+                    </h3>
+
+                    <p class="mb-6 leading-relaxed">
+                        We provide high-quality recorded courses that you can watch anytime from anywhere.
+                    </p>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Expert Instructors
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Interactive Lessons
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Lifetime Access
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Live classes card -->
+                <div class="bg-violet-50/50 border border-violet-100 rounded-3xl p-8 hover:bg-white hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <div class="w-16 h-16 bg-fuchsia-100 text-fuchsia-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-fuchsia-500 group-hover:text-white group-hover:rotate-6 transition duration-500">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        Live Classes
+                    </h3>
+
+                    <p class="mb-6 leading-relaxed">
+                        We organize live interactive classes with professional teachers in real time.
+                    </p>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-500"></i>
+                            Real-time Interaction
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-500"></i>
+                            Recorded Sessions
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-500"></i>
+                            Personal Feedback
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Skills development card -->
+                <div class="bg-violet-50/50 border border-violet-100 rounded-3xl p-8 hover:bg-white hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <div class="w-16 h-16 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-violet-600 group-hover:text-white group-hover:rotate-6 transition duration-500">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        Skills Development
+                    </h3>
+
+                    <p class="mb-6 leading-relaxed">
+                        We build professional skills that prepare you for the modern job market.
+                    </p>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Practical Projects
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Expert Mentors
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-violet-600"></i>
+                            Career Guidance
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics section -->
+    <section class="py-20 bg-gradient-to-r from-violet-600 to-fuchsia-500">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-10 text-center text-white">
+
+            <!-- Students statistic -->
+            <div>
+                <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 hover:scale-110 hover:bg-white/30 transition duration-300">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <p class="text-4xl font-bold">+500</p>
+                <p class="text-violet-100 mt-1">Students Worldwide</p>
+            </div>
+
+            <!-- Courses statistic -->
+            <div>
+                <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 hover:scale-110 hover:bg-white/30 transition duration-300">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <p class="text-4xl font-bold">+1000</p>
+                <p class="text-violet-100 mt-1">Courses Completed</p>
+            </div>
+
+            <!-- Instructors statistic -->
+            <div>
+                <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 hover:scale-110 hover:bg-white/30 transition duration-300">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+
+                <p class="text-4xl font-bold">+50</p>
+                <p class="text-violet-100 mt-1">Expert Instructors</p>
+            </div>
+
+            <!-- Experience statistic -->
+            <div>
+                <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 hover:scale-110 hover:bg-white/30 transition duration-300">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <p class="text-4xl font-bold">+10</p>
+                <p class="text-violet-100 mt-1">Years of Experience</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team section -->
+    <section id="team" class="py-24 bg-violet-50/50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Team section heading -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+
+                <span class="inline-block bg-white text-violet-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-sm">
+                    <i class="fa-solid fa-people-group"></i>
+                    Our Team
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    Our Expert Instructors
+                </h2>
+
+                <p>
+                    An elite group of the best educational experts.
+                </p>
+
+            </div>
+
+            <!-- Team members grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- First team member -->
+                <div class="bg-white rounded-3xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <!-- Image and social overlay -->
+                    <div class="relative overflow-hidden rounded-2xl mb-5">
+
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                             alt="Ahmed Mohamed"
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+
+                        <!-- Social icons appear on hover -->
+                        <div class="absolute inset-0 bg-violet-900/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+
+                            <div class="flex items-center gap-3">
+
+                                <a href="#"
+                                   aria-label="Facebook"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="Twitter"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="LinkedIn"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Ahmed Mohamed
+                    </h3>
+
+                    <p class="text-violet-600 text-sm font-medium mb-2">
+                        Head of Education
+                    </p>
+
+                    <p class="text-sm">
+                        10 years of experience in teaching mathematics
+                    </p>
+
+                </div>
+
+                <!-- Second team member -->
+                <div class="bg-white rounded-3xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <!-- Image and social overlay -->
+                    <div class="relative overflow-hidden rounded-2xl mb-5">
+
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                             alt="Sara Ahmed"
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+
+                        <!-- Social icons appear on hover -->
+                        <div class="absolute inset-0 bg-violet-900/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+
+                            <div class="flex items-center gap-3">
+
+                                <a href="#"
+                                   aria-label="Facebook"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="Twitter"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="LinkedIn"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Sara Ahmed
+                    </h3>
+
+                    <p class="text-violet-600 text-sm font-medium mb-2">
+                        English Instructor
+                    </p>
+
+                    <p class="text-sm">
+                        Specialized in English language teaching
+                    </p>
+
+                </div>
+
+                <!-- Third team member -->
+                <div class="bg-white rounded-3xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <!-- Image and social overlay -->
+                    <div class="relative overflow-hidden rounded-2xl mb-5">
+
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+                             alt="Mohamed Ali"
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+
+                        <!-- Social icons appear on hover -->
+                        <div class="absolute inset-0 bg-violet-900/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+
+                            <div class="flex items-center gap-3">
+
+                                <a href="#"
+                                   aria-label="Facebook"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="Twitter"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="LinkedIn"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Mohamed Ali
+                    </h3>
+
+                    <p class="text-violet-600 text-sm font-medium mb-2">
+                        Programming Instructor
+                    </p>
+
+                    <p class="text-sm">
+                        Expert in web development teaching
+                    </p>
+
+                </div>
+
+                <!-- Fourth team member -->
+                <div class="bg-white rounded-3xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-violet-100 hover:-translate-y-2 transition duration-500 group">
+
+                    <!-- Image and social overlay -->
+                    <div class="relative overflow-hidden rounded-2xl mb-5">
+
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+                             alt="Noura Khaled"
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+
+                        <!-- Social icons appear on hover -->
+                        <div class="absolute inset-0 bg-violet-900/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+
+                            <div class="flex items-center gap-3">
+
+                                <a href="#"
+                                   aria-label="Facebook"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="Twitter"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+
+                                <a href="#"
+                                   aria-label="LinkedIn"
+                                   class="w-10 h-10 rounded-full bg-white text-violet-600 flex items-center justify-center hover:bg-violet-600 hover:text-white transition duration-300">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Noura Khaled
+                    </h3>
+
+                    <p class="text-violet-600 text-sm font-medium mb-2">
+                        Graphic Design Instructor
+                    </p>
+
+                    <p class="text-sm">
+                        Specialized in visual identity design
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   <!-- Footer and contact section -->
+<footer id="contact" class="bg-violet-950 text-violet-200 pt-16 pb-8">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Contact form and contact information area -->
+        <div class="grid lg:grid-cols-2 gap-12 border-t border-white/10 pt-12 mb-12">
+
+            <!-- Contact form on the left -->
+            <div>
+
+                <h4 class="text-white text-2xl font-bold mb-3">
+                    Contact Us
+                </h4>
+
+                <p class="mb-6 leading-relaxed">
+                    Have a question or want to learn more?
+                    Send us a message and our team will contact you soon.
+                </p>
+
+                <form action="#" method="post" class="space-y-4">
+
+                    <!-- Name input -->
+                    <input type="text"
+                           name="name"
+                           placeholder="Your Name"
+                           required
+                           class="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder-violet-200 outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-400/30 transition">
+
+                    <!-- Email input -->
+                    <input type="email"
+                           name="email"
+                           placeholder="Your Email"
+                           required
+                           class="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder-violet-200 outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-400/30 transition">
+
+                    <!-- Message textarea -->
+                    <textarea name="message"
+                              rows="5"
+                              placeholder="Your Message"
+                              required
+                              class="w-full resize-none rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder-violet-200 outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-400/30 transition"></textarea>
+
+                    <!-- Submit button -->
+                    <button type="submit"
+                            class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 font-semibold text-violet-700 hover:bg-violet-100 hover:-translate-y-1 transition duration-300">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Contact information on the right -->
+            <div>
+
+                <h4 class="text-white text-2xl font-bold mb-3">
+                    Contact Information
+                </h4>
+
+                <p class="mb-6 leading-relaxed">
+                    We are always ready to answer your questions and help you choose
+                    the right learning program.
+                </p>
+
+                <ul class="space-y-5">
+
+                    <!-- Address -->
+                    <li class="flex items-start gap-4">
+
+                        <div class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-violet-300 flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-white font-semibold">Address</p>
+                            <p>123 Education Street, Cairo, Egypt</p>
+                        </div>
+
+                    </li>
+
+                    <!-- Phone -->
+                    <li class="flex items-start gap-4">
+
+                        <div class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-violet-300 flex items-center justify-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-white font-semibold">Phone</p>
+                            <a href="tel:+201234567890"
+                               class="hover:text-white transition">
+                                +20 123 456 7890
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <!-- Email -->
+                    <li class="flex items-start gap-4">
+
+                        <div class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-violet-300 flex items-center justify-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <p class="text-white font-semibold">Email</p>
+                            <a href="mailto:info@edulearn.com"
+                               class="hover:text-white transition">
+                                info@edulearn.com
+                            </a>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Main footer columns -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12   border-t border-white/10 pt-8">
+
+            <!-- Website information -->
+            <div>
+
+                <a href="#home"
+                   class="text-2xl font-bold text-white mb-5 block">
+                    <i class="fa-solid fa-graduation-cap text-violet-400"></i>
+                    Edu<span class="text-fuchsia-400">Learn</span>
+                </a>
+
+                <p class="leading-relaxed mb-5">
+                    We provide integrated learning solutions that help you develop your skills
+                    and achieve your goals through innovative educational programs.
+                </p>
+
+                <!-- Social media links -->
+                <div class="flex gap-3">
+
+                    <a href="#"
+                       aria-label="Facebook"
+                       class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-violet-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#"
+                       aria-label="Twitter"
+                       class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-violet-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#"
+                       aria-label="Instagram"
+                       class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-violet-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#"
+                       aria-label="LinkedIn"
+                       class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-violet-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick links -->
+            <div>
+
+                <h4 class="text-white font-bold text-lg mb-5">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#home" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#courses" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#team" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Our Team
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Courses links -->
+            <div>
+
+                <h4 class="text-white font-bold text-lg mb-5">
+                    Our Courses
+                </h4>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#courses" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Programming
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#courses" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            English Language
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#courses" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Graphic Design
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#courses" class="hover:text-white transition">
+                            <i class="fa-solid fa-chevron-right text-xs mr-2"></i>
+                            Mathematics
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact information -->
+            <div>
+
+                <h4 class="text-white font-bold text-lg mb-5">
+                    Contact Information
+                </h4>
+
+                <ul class="space-y-4">
+
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-violet-400 mt-1"></i>
+                        <span>123 Education Street, Cairo, Egypt</span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone text-violet-400 mt-1"></i>
+                        <a href="tel:+201234567890" class="hover:text-white transition">
+                            +20 123 456 7890
+                        </a>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope text-violet-400 mt-1"></i>
+                        <a href="mailto:info@edulearn.com" class="hover:text-white transition">
+                            info@edulearn.com
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-8 text-center">
+
+            <p>
+                &copy; 2026
+                <span class="text-white font-semibold">EduLearn</span>.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
